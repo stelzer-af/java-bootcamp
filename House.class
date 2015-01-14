@@ -1,0 +1,59 @@
+
+public class House {
+	private int rooms;
+	private int bathrooms;
+	private boolean garage;
+	private boolean garden;
+	
+	public int getRooms(){
+		return rooms;
+	}
+	public void setRooms(int rooms){
+		this.rooms = rooms;
+	}
+	
+	public int getBathrooms(){
+		return bathrooms;
+	}
+	
+	public void setBathrooms(int bathrooms){
+		this.bathrooms = bathrooms;
+	}
+	
+	public boolean getGarage(){
+		return garage;
+	}
+	
+	public void setGarage(boolean garage){
+		this.garage = garage;		
+	}
+	
+	public boolean getGarden(){
+		return garden;
+	}
+	
+	public void setGarden(boolean garden){
+		this.garden = garden;
+	}
+	
+	public String toString(){
+		String garages;
+		String gardens;
+		if(garage == true){
+			garages = "si";
+		}
+		else{
+			garages = "no";
+		}
+		if(garden == true){
+			gardens = "si";
+		}
+		else{
+			gardens = "no";
+		}
+		
+		return "Rooms: " + rooms + " bathrooms: " + bathrooms + " garages: " + garages.toString() + " gardens: " + gardens.toString(); 
+	}
+	
+
+}

@@ -1,0 +1,40 @@
+
+public class MyhouseBuilder implements HouseBuilder {	
+	
+	private House house;
+	
+	public MyhouseBuilder(){
+		house = new House();
+		
+	}
+	
+	@Override
+	public void buildRooms(){
+		house.setRooms(3); 
+	
+	}
+	@Override
+	public void buildBathrooms(){
+		house.setBathrooms(2);
+		
+	}
+	
+	@Override
+	public void buildGarage(){
+		house.setGarden(false);
+	}
+	
+	@Override
+	public void buildGarden(){
+		house.setGarden(true);
+		
+	}
+	
+	@Override
+	public House getHouse(){
+		return house;
+	}
+
+	
+
+}

@@ -1,0 +1,15 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HouseBuilder houseBuilder = new MyhouseBuilder();
+		HouseDirector houseDirector = new HouseDirector(houseBuilder);
+		houseDirector.constructHouse();
+		House house = houseDirector.getHouse();
+		System.out.println("my house is : " + house);
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+
+public interface HouseBuilder {
+	public void buildRooms();
+	public void buildBathrooms();
+	public void buildGarage();
+	public void buildGarden();
+	public House getHouse();
+	
+
+}
